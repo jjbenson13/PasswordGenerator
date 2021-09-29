@@ -15,7 +15,8 @@
 
 body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
-  color: aliceblue;
+  color: rgb(102, 103, 104);
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +25,8 @@ body {
 }
 
 .pw-container {
-  background-color: rgb(218, 154, 196);
+  background-color: rgb(207, 174, 196);
+  box-shadow: 0 4px 10px rgb(102, 103, 104);
   width: 400px;
 }
 
@@ -32,10 +34,58 @@ body {
   padding: 1rem;
 }
 
-.pw{
+.pw {
+  background-image: linear-gradient( rgb(194, 153, 194), rgb(137, 180, 204));
+  display: flex font-size: 2rem;
+  align-items: center;
+  height: 70px;
   width: 100%;
+  position: relative;
+  padding: 1rem;
+}
+
+.pw button {
+  background-color: rgb(207, 174, 196);
+  border: none;
+  color: rgb(102, 103, 104);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 0, 25rem;
+  font-size: ;
+  position: absolute;
+  bottom: 0;
+  left: 33%;
+  transform: translateX(-33%, 33%);
+  transition: opacity 0.2s ease;
+  opacity: 0;
+}
+
+.pw:hover button {
+  opacity: 1;
 }
 
 .pw-body {
-  padding: 1rem;
+  padding: 0 1rem 1rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: space-between; 
+  margin: 0.5rem;
+}
+
+.generate-password {
+  background-color: rgb(243, 232, 224);
+  border: none;
+  color: rgb(102, 103, 104);
+  display: block;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+
+
 }

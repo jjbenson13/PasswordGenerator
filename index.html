@@ -12,30 +12,45 @@
   <div class="bg-gradiant"> 
 
   <div class="pw-container">
+    
     <div class="pw-header">
       <div class="pw">
-        <button>Copy to clipboard</button>
+        <button>Copy to Clipboard</button>
       </div>
     </div>
+
     <div class="pw-body">
       <div class="form- control">
         <label for="length">Password Length</label>
-        <input id="length" type="number" min="4" max="40"/>
+        <input id="length" value="20" type="number" min="4" max="40"/>
       </div>
+
       <div class="form-control">
-        <label for="lower">Contain Lowercase Letters</label
-        <input id="lower"
-        type="checkbox" />
+        <label for="upper">Contain Uppercase Letters</label>
+        <input id="upper" type="checkbox" />
       </div>
+      
+      <div class="form-control">
+        <label for="lower">Contain Lowercase Letters</label>
+        <input id="lower" type="checkbox" />
+      </div>
+      
       <div class="form-control">
         <label for="number">Contain Numbers</label>
         <input id="number" type="checkbox" />
       </div>
+      
       <div class="form-control">
         <label for="symbol">Contain Symbols</label>
         <input id="symbol" type="checkbox" />
       </div>
+
+      <button class="generate-password" id="generate-password">
+        Generate Password
+      </button>
+    
     </div>
+  
   </div>
   
   </div>
