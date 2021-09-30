@@ -70,9 +70,10 @@ body {
 }
 
 .form-control {
+  color: rgb(102, 103, 104);
   display: flex;
-  justify-content: space-between; 
-  margin: 0.5rem;
+  justify-content: space-between;
+  margin: 0.75rem 0;
 }
 
 .generate-password {
@@ -86,6 +87,4 @@ body {
   padding: 0.5rem;
   margin-top: 1rem;
   width: 100%;
-
-
 }
