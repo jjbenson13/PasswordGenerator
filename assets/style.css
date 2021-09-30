@@ -36,7 +36,8 @@ body {
 
 .pw {
   background-image: linear-gradient( rgb(194, 153, 194), rgb(137, 180, 204));
-  display: flex font-size: 2rem;
+  display: flex; 
+  font-size: 2rem;
   align-items: center;
   height: 70px;
   width: 100%;
@@ -52,7 +53,7 @@ body {
   font-family: inherit;
   font-weight: bold;
   padding: 0, 25rem;
-  font-size: ;
+  font-size: 0.90rem;
   position: absolute;
   bottom: 0;
   left: 33%;
