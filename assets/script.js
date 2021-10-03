@@ -5,7 +5,7 @@ const upperEl = document.getElementById("upper")
 const lowerEl = document.getElementById("lower")
 const numberEl = document.getElementById("number")
 const symbolEl = document.getElementById("symbol")
-const generatePasswordEl = document.getElementById("generatePassword")
+const generateEl = document.getElementById("generate")
 
 const upperLetters = "ABCDEFGHIJKLMNOPQRETUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
@@ -28,7 +28,7 @@ function getSymbol() {
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
-function GeneratePassword() {
+function generatePassword() {
   const length = lengthEl.value;
 
   let password = "";
@@ -38,26 +38,28 @@ function GeneratePassword() {
     password += x;
   }
 
-  pwEl.innerText = password;
+  // pwEl.innerText = password;
 }
 
 function generateX() {
   const xs = [];
   if(upperEl.checked) {
-    xs.push(getUppercase())
+    xs.push(getUppercase());
   }
 
   if (lowerEl.checked) {
-    xs.push(getLowercase())
+    xs.push(getLowercase());
   }
 
   if (symbolEl.checked) {
-    xs.push(getSymbol())
+    xs.push(getSymbol());
   }
 
   if (numberEl.checked) {
-    xs.push(getNumber())
+    xs.push(getNumber());
   }
+
+  return xs[Math.floor(Math.random * xs.length)];
 }
 
-generatePasswordEl.addEventListener("click", GeneratePassword);
+generateEl.addEventListener("click", generatePassword);
