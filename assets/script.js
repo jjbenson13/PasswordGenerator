@@ -1,6 +1,6 @@
 const pwEl = document.getElementById("pw")
 const copyEl = document.getElementById("copy")
-const lengthEl = document.getElementById("length")
+const lenEl = document.getElementById("len")
 const upperEl = document.getElementById("upper")
 const lowerEl = document.getElementById("lower")
 const numberEl = document.getElementById("number")
@@ -29,16 +29,15 @@ function getSymbol() {
 }
 
 function generatePassword() {
-  const length = lengthEl.value;
+  const len = lenEl.value;
 
   let password = "";
-
-  for(let i=0; i<length; i++) {
+  
+  for(let i=0; i<len; i++) {
     const x = generateX();
     password += x;
   }
-
-  // pwEl.innerText = password;
+  pwEl.innerText = pw;
 }
 
 function generateX() {
